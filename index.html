@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logovkladok.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Gray background color */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            background-image: url('/img/Shapkafons.PNG'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        header img {
+            max-width: 120px; /* Adjust the maximum width to make the image larger */
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        nav {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-top: 1mm;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie {
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Add margin bottom to separate movies */
+        }
+
+        .movie img {
+            max-width: 15%; /* Adjust the maximum width to make the image smaller */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .movie-info {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .movie-info h2 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .button {
+            margin-top: auto;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Remove default button styles */
+            display: inline-block; /* Make it an inline element to allow adding a link */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <title>Ыссык-Көл</title>
+</head>
+<body>
+
+    <header>
+        <img src="/img/logo.ico" alt="Логотип">
+        <h1>Ыссык-Көл кинотеатор </h1>
+    </header>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Сеансы</a>
+        <a href="#">Афишы</a>
+        <a href="#">Контакты</a>
+    </nav>
+
+    <section>
+        <div class="movie">
+            <img src="https://ic.p24.app/unsafe/540x800/filters:quality(80)/st.p24.app/static/posters/38131/05086967-65c1-4060-bd8a-3c2fb856ee8e.jpeg?1706159694" alt="Постер фильма 1">
+            <div class="movie-info">
+                <h2>Разбой 2. Новая глава (2024)</h2>
+                <p>Год производства: 2024</p>
+                <p>Страна: Кыргызстан</p>
+                <p>Жанр: драма, криминал</p>
+                <p>Продолжительность: 74 мин. / 02:10</p>
+                <p>Премьера (Кыргызстан): 2024-01-25</p>
+                <a href="https://youtu.be/9NfrQxN3_hs?si=4yjtWfQlk4nYnyTk" class="button">Трейлер </a>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://static.kinoafisha.info/k/movie_posters/1080x1920/upload/movie_posters/2/9/6/8372692/756589395557.jpg" alt="Постер фильма 2">
+            <div class="movie-info">
+                <h2>Аяш 3, 2023</h2>
+                <p>Год производства:  2023</p>
+                <p>Страна: Кыргызстан</p>
+                <p>Жанр: комедия</p>
+                <p>Продолжительность: 97 мин. / 02:00</p>
+                <p>Премьера (Кыргызстан): 2023-10-19</p>
+                <a href="https://youtu.be/K3HJ0CMBTOk?si=5oEnc6p03UfUVNbL" class="button">Трейлер </a>
+            </div>
+        </div>
+        <!-- Add more movie blocks as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ыссык-Көл</p>
+    </footer>
+
+</body>
+</html>
